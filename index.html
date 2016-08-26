@@ -1,0 +1,13 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Target <code>_blank</code> phishing POC</h1>
+    <p>The page/tab from which this page was opened has now navigated to <em>https://example.com</em>.</p>
+    <script>
+      if (window.opener) {
+        window.opener.location = 'https://example.com/';
+      }
+    </script>
+  </body>
+</html>
